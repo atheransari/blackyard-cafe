@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Blackyard Café & Restro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- TOP BAR + NAV -->
+    <header class="top-bar">
+      <div class="nav-left">
+        <img src="assets/logo.PNG" alt="Logo" class="logo-small" />
+      </div>
+
+      <div class="nav-center">
+        <h1 class="nav-title">Blackyard Café & Restro</h1>
+        <p class="nav-tagline">License to Chill</p>
+      </div>
+
+      <div class="nav-right">
+        <div class="hamburger" onclick="toggleMobileNav()">☰</div>
+      </div>
+    </header>
+
+    <!-- UNIFIED MOBILE NAV -->
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#location">Location</a>
+      <a href="https://www.instagram.com/theblackyardcafe" target="_blank">
+        Instagram
+      </a>
+      <a
+        href="
+https://zomato.onelink.me/xqzv/9f7kkyhk"
+        target="_blank"
+        >Zomato</a
+      >
+    </nav>
+    <!-- HERO VIDEO -->
+    <section class="video-section">
+      <video class="hero-video" controls>
+        <source src="assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- BRANDING HEADLINE -->
+    <section class="intro-text">
+      <p
+        class="theme-line"
+        style="max-width: 700px; margin: 0 auto; color: #fff"
+      >
+        Inspired by the elegance of Casino Royale
+      </p>
+    </section>
+    <div class="section-divider"></div>
+
+    <!--why blackyard-->
+    <section class="why-blackyard" id="why">
+      <h2 class="section-title" style="color: #ffd900cb">Why Blackyard?</h2>
+      <div class="why-cards">
+        <div class="why-card">
+          <h3>🖤 Cozy, Dark Ambience</h3>
+          <p>
+            Experience dim-lit interiors, golden accents, and a vibe crafted for
+            comfort & mystery.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <h3>🍽️ Signature Multi-Cuisine</h3>
+          <p>
+            From Italian to Chinese, our menu is curated to satisfy every kind
+            of craving.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <h3>🎥 007 Inspired Luxury</h3>
+          <p>
+            Inspired by Casino Royale, Blackyard redefines dining with a
+            Bond-style elegance.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <h3>📍 Prime Location</h3>
+          <p>
+            Located at Attapur, Hyderabad — your perfect hangout destination
+            just off the main road.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- Ambience Section -->
+    <section class="ambience-section" id="ambience">
+      <h2 class="ambience-title">Ambience</h2>
+      <p class="ambience-text">
+        Step into <strong>Blackyard</strong> — where dim lighting, golden glow,
+        and curated interiors create a space that feels more like a scene from
+        <em>Casino Royale</em> than a café in the city. Whether you're here for
+        an intimate dinner, chilling with friends, or enjoying a
+        <strong>private cabin experience</strong>, our ambiance sets the mood
+        for unforgettable moments.
+      </p>
+
+      <div
+        id="ambienceCarousel"
+        class="carousel slide carousel-dark"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/amb1.jpg" class="d-block w-100" alt="Ambience 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/amb2.jpg" class="d-block w-100" alt="Ambience 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/amb3.jpg" class="d-block w-100" alt="Ambience 3" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#ambienceCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#ambienceCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- SIGNATURE SECTION -->
+    <section class="signature-section" id="signature">
+      <h2 class="section-heading">Signature Dishes</h2>
+      <div class="signature-cards">
+        <div class="signature-card" data-aos="fade-up">
+          <img
+            src="assets/signature-pizza.jpg"
+            alt="Blackyard All-In-One Pizza"
+            class="card-img"
+          />
+          <h3 class="card-title">Blackyard All-In-One Pizza</h3>
+          <p class="card-desc">
+            A loaded masterpiece with chicken tikka, sausage, and more in every
+            slice.
+          </p>
+        </div>
+
+        <div class="signature-card" data-aos="fade-up" data-aos-delay="100">
+          <img
+            src="assets/signature-burger.jpg"
+            alt="Blackyard Special Burger"
+            class="card-img"
+          />
+          <h3 class="card-title">Blackyard Special Burger</h3>
+          <p class="card-desc">
+            House special loaded zinger bursting with layers of flavor.
+          </p>
+        </div>
+
+        <div class="signature-card" data-aos="fade-up" data-aos-delay="200">
+          <img
+            src="assets/signature-sandwich.jpg"
+            alt="Club Sandwich"
+            class="card-img"
+          />
+          <h3 class="card-title">Club Sandwich</h3>
+          <p class="card-desc">
+            Multilayered sandwich stacked with chicken and fresh veggies.
+          </p>
+        </div>
+
+        <div class="signature-card" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="assets/signature-nachos.jpg"
+            alt="Cheesy Salsa Nachos"
+            class="card-img"
+          />
+          <h3 class="card-title">Cheesy Salsa Nachos</h3>
+          <p class="card-desc">
+            Crispy nachos smothered in creamy cheese and tangy salsa.
+          </p>
+        </div>
+
+        <div class="signature-card" data-aos="flip-right" data-aos-delay="400">
+          <img
+            src="assets/signature-wrap.jpg"
+            alt="Blackyard Signature Wrap"
+            class="card-img"
+          />
+          <h3 class="card-title">Blackyard Signature Wrap</h3>
+          <p class="card-desc">
+            Blackyard signature dish packed with bold unique flavors.
+          </p>
+        </div>
+
+        <div class="signature-card" data-aos="flip-left" data-aos-delay="500">
+          <img
+            src="assets/signature-mutton.jpg"
+            alt="Pathar Ka Gosh"
+            class="card-img"
+          />
+          <h3 class="card-title">Pathar Ka Gosh</h3>
+          <p class="card-desc">
+            Tender mutton seared on a hot stone with Hyderabadi spices.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- BEVERAGES SECTION -->
+    <section class="signature-section" id="beverages">
+      <h2 class="section-heading">Beverages</h2>
+      <p
+        class="section-subtext"
+        style="max-width: 700px; margin: 0 auto; color: #c9a54d"
+      >
+        “Shaken, not stirred.” — James Bond
+      </p>
+      <p
+        class="section-subtext"
+        data-aos="fade-up"
+        style="max-width: 700px; margin: 0 auto; color: #c9a54d"
+      >
+        Refresh. Recharge. Relish.
+      </p>
+
+      <p
+        class="section-description"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        style="
+          max-width: 700px;
+          margin: 1rem auto 2rem;
+          font-size: 1rem;
+          color: #ccc;
+          text-align: center;
+        "
+      >
+        Complement your meal with a refreshing lineup of handcrafted mocktails,
+        indulgent thick shakes, and aromatic coffee selections. Whether you’re
+        cooling off with a zesty citrus blend, sipping on a creamy shake, or
+        enjoying a slow-brewed coffee, our beverages are designed to awaken your
+        senses and complete your Blackyard experience.
+      </p>
+
+      <div class="signature-cards">
+        <!-- Hot Coffee -->
+        <div class="signature-card" data-aos="fade-up">
+          <img src="assets/espresso.jpg" alt="Espresso" class="card-img" />
+          <h3 class="card-title">Espresso</h3>
+          <p class="card-desc">
+            Strong, rich single shot of coffee with intense flavor.
+          </p>
+        </div>
+
+        <!-- Cold Coffee -->
+        <div class="signature-card" data-aos="fade-up" data-aos-delay="100">
+          <img
+            src="assets/nutella-cold.jpg"
+            alt="Nutella Cold Coffee"
+            class="card-img"
+          />
+          <h3 class="card-title">Nutella Cold Coffee</h3>
+          <p class="card-desc">
+            Creamy cold coffee infused with Nutella richness.
+          </p>
+        </div>
+
+        <!-- Shake -->
+        <div class="signature-card" data-aos="fade-up" data-aos-delay="200">
+          <img
+            src="assets/fererro.jpg"
+            alt="Fererro Rocher Shake"
+            class="card-img"
+          />
+          <h3 class="card-title">Fererro Rocher Shake</h3>
+          <p class="card-desc">
+            A thick shake blended with Fererro Rocher chocolate delight.
+          </p>
+        </div>
+
+        <!-- Mocktail -->
+        <div class="signature-card" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="assets/blackcurrent-mojito.jpg"
+            alt="Black Current Mojito"
+            class="card-img"
+          />
+          <h3 class="card-title">Black Current Mojito</h3>
+          <p class="card-desc">
+            Refreshing mocktail with mint, lime, and bold black current notes.
+          </p>
+        </div>
+
+        <!-- Hot Chocolate -->
+        <div class="signature-card" data-aos="fade-up" data-aos-delay="400">
+          <img
+            src="assets/mocha-hot.jpg"
+            alt="Mocha Caramel Hot Chocolate"
+            class="card-img"
+          />
+          <h3 class="card-title">Mocha Caramel Hot Chocolate</h3>
+          <p class="card-desc">
+            Silky hot chocolate blended with espresso & caramel swirl.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- BLACKYARD GRILLS SECTION -->
+    <section class="grill-section" id="blackyard-grills">
+      <h2 class="section-heading" data-aos="fade-up">Blackyard Grills</h2>
+
+      <p
+        class="section-subtext"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        style="color: #c9a54d"
+      >
+        Where Tradition Meets Flame
+      </p>
+
+      <p
+        class="section-description"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        style="
+          max-width: 720px;
+          margin: 1.5rem auto 2rem;
+          text-align: center;
+          color: #ccc;
+          line-height: 1.8;
+        "
+      >
+        Experience the bold, authentic flavors of our Blackyard Grills – a
+        celebration of Hyderabadi street-side grilling elevated to gourmet
+        perfection. From the smoky tenderness of Pathar ka Gosht and Pathar ki
+        Chicken seared over hot stone, to a variety of expertly marinated
+        kebabs, each dish is crafted with time-honored recipes and flame-grilled
+        to juicy perfection. Our grills capture the essence of rich, rustic
+        cuisine with every bite— perfect for those who crave depth, spice, and
+        authenticity.
+      </p>
+
+      <hr
+        style="width: 80px; border: 1px solid gold; margin: 0 auto"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      />
+      <div class="signature-cards" style="margin-top: 2rem">
+        <!-- Pathar Ka Gosh -->
+        <div class="signature-card" data-aos="fade-up">
+          <img
+            src="assets/grill/pathar-ka-gosht.jpg"
+            alt="Pathar Ka Gosh"
+            class="card-img"
+          />
+          <h3 class="card-title">Pathar Ka Gosh</h3>
+          <p class="card-desc">
+            Tender mutton seared on a hot stone with Hyderabadi spices.
+          </p>
+        </div>
+
+        <!-- Mutton Chops -->
+        <div class="signature-card" data-aos="fade-up" data-aos-delay="100">
+          <img
+            src="assets/grill/mutton-chops.jpg"
+            alt="Mutton Chops"
+            class="card-img"
+          />
+          <h3 class="card-title">Mutton Chops</h3>
+          <p class="card-desc">
+            Juicy mutton ribs marinated and grilled to perfection.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!--menu-->
+    <section class="menu-link">
+      <a href="menu.html" class="menu-button">View Full Menu</a>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+      <h2>Find Us</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.2739695100313!2d78.41595807368826!3d17.350545003868366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9717c7312929%3A0x6f45b28619217d05!2sBlackyard%20Cafe%20%26%20Restro!5e0!3m2!1sen!2sin!4v1747040632011!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <!-- Contact Us -->
+    <section class="info-section" id="contact">
+      <h2>Contact Us</h2>
+      <p>📍 Address: Black Yard Café & Restro, Hyderabad</p>
+      <p>📞 Phone: +91-9160874555</p>
+      <p>📷 Instagram: @blackyardcafe</p>
+    </section>
+    <script>
+      function toggleMobileNav() {
+        const nav = document.getElementById("mobile-nav");
+        nav.classList.toggle("show");
+      } // Auto-close nav when a link is clicked
+      document.querySelectorAll(".mobile-nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.getElementById("mobile-nav").classList.remove("show");
+        });
+      });
+    </script>
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slider-image");
+
+      function showSlide(index) {
+        const total = slides.length;
+        if (index >= total) slideIndex = 0;
+        if (index < 0) slideIndex = total - 1;
+
+        const slideWrapper = document.querySelector(".slides");
+        const offset = slideIndex * slides[0].clientWidth;
+        slideWrapper.style.transform = `translateX(-${offset}px)`;
+      }
+
+      function plusSlides(n) {
+        slideIndex += n;
+        showSlide(slideIndex);
+      }
+
+      // Show first slide
+      window.addEventListener("load", () => showSlide(slideIndex));
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // animation duration in ms
+        once: true, // animation happens only once
+      });
+    </script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
